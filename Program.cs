@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace lab4ex1
 {
@@ -25,7 +25,7 @@ Instantiati un dulap in functia Main, apelati metoda de calcul a volumului si af
             Console.WriteLine("Introduceti inaltimea dulapului");
             int inaltime = int.Parse(Console.ReadLine());
 
-            dulap dulap = new dulap(lungime, latime, inaltime);
+            Dulap dulap = new Dulap(lungime, latime, inaltime);
 
             //Console.WriteLine($ "volumul dulapului cu lungimea " { dulap.GetLungime() " , latimea " { dulap.GetLatime()} ", inaltimea "{ dulap.GetInaltime()} " este " { dulap.GetVolume(lungime, latime, inaltime)} ) ;
 
@@ -36,49 +36,6 @@ Instantiati un dulap in functia Main, apelati metoda de calcul a volumului si af
         }
 
 
-        class dulap
-        {
-
-            private int lungime;
-            private int latime;
-            private int inaltime;
-
-
-
-            public dulap (int lungime, int latime, int inaltime)
-            {
-
-                this.lungime = lungime;
-                this.latime = latime;
-                this.inaltime = inaltime;
-            }
-
-
-            public int GetLungime()
-            {
-                return lungime;
-            }
-
-            public int GetLatime()
-            {
-                return latime;
-            }
-
-            public int GetInaltime()
-            {
-                return inaltime;
-            }
-
-            public int GetVolume(int lungime, int latime, int inaltime)
-            {
-
-                int volume = lungime * latime * inaltime;
-
-                return volume;
-            }
-
-
-
-        }
+        
     }
 }
